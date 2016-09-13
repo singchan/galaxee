@@ -87,10 +87,14 @@
                 if ($(this).scrollTop() <= navOffset) {
                     nav.css('position', '');
                     navBg.css('position', '');
+                    nav.css('top', '');
+                    navBg.css('top', '');
                 }
                 else {
                     nav.css('position', 'fixed');
                     navBg.css('position', 'fixed');
+                    nav.css('top', '0');
+                    navBg.css('top', '0');
                 }
             });
         });
