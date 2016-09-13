@@ -81,14 +81,17 @@
     <script type="text/javascript" class="silex-script">
         $(function() {
             var nav = $(".nav");
+            var navBg = $(".nav-bg");
             var navOffset = nav.offset().top;
             $(window).scroll(function() {
                 console.log('xxx', $(this).scrollTop(), navOffset);
                 if ($(this).scrollTop() <= navOffset) {
                     nav.css('position', '');
+                    navBg.css('position', '');
                 }
                 else {
                     nav.css('position', 'fixed');
+                    navBg.css('position', 'fixed');
                 }
             });
         });
@@ -938,7 +941,7 @@
             </div>
         </div>
     </div>
-    <div data-silex-type="container" class="editable-style silex-id-1465478794933-37 container-element paged-element full-width hide-on-mobile page-galaxee-home-page" data-silex-id="silex-id-1465478794933-37"></div>
+    <div data-silex-type="container" class="editable-style silex-id-1465478794933-37 container-element paged-element page-galaxee-home-page full-width hide-on-mobile nav-bg" data-silex-id="silex-id-1465478794933-37"></div>
     <div data-silex-type="container" class="editable-style silex-id-1465478880491-38 container-element paged-element full-width bg-img hide-on-mobile page-galaxee-home-page" data-silex-id="silex-id-1465478880491-38"></div>
     <div data-silex-type="container" class="editable-style silex-id-1465479260507-39 container-element paged-element full-width hide-on-mobile page-galaxee-home-page" data-silex-id="silex-id-1465479260507-39"></div>
     <div data-silex-type="container" class="editable-style container-element silex-id-1465479314251-40 paged-element full-width hide-on-mobile page-galaxee-home-page" data-silex-id="silex-id-1465479314251-40"></div>
