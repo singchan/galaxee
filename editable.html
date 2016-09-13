@@ -84,7 +84,6 @@
             var navBg = $(".nav-bg");
             var navOffset = nav.offset().top;
             $(window).scroll(function() {
-                console.log('xxx', $(this).scrollTop(), navOffset);
                 if ($(this).scrollTop() <= navOffset) {
                     nav.css('position', '');
                     navBg.css('position', '');
