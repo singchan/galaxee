@@ -85,10 +85,10 @@
             $(window).scroll(function() {
                 console.log('xxx', $(this).scrollTop(), navOffset);
                 if ($(this).scrollTop() <= navOffset) {
-                    nav.css('position', 'static');
+                    nav.css('position', '');
                 }
                 else {
-                    nav.css('position', '');
+                    nav.css('position', 'fixed');
                 }
             });
         });
