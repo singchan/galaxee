@@ -54,9 +54,13 @@
         display: inline-block;
         padding: 15px;
         cursor: pointer;
+        line-height: 0;
     }
     .picture-bg {
         color: white;
+    }
+    .nav a.active-menu {
+       color: #53cd9c;
     }
     
         .body-initial {
@@ -109,10 +113,11 @@
             left: 497px; 
         }
         .silex-id-1465466883063-5 {
-            min-height: 78px; 
+            min-height: 62px; 
             width: 960px; 
             top: 625px; 
-            left: -2px; 
+            left: 0px; 
+            background-color: rgba(75,75,75,1); 
         }
         @media only screen and (max-width: 480px), only screen and (max-device-width: 480px){.silex-id-1465466883063-5 {
             top: 231px; 
@@ -404,10 +409,10 @@
             left: 11px; 
         }
         .silex-id-1465478794933-37 {
-            min-height: 74px; 
+            min-height: 61px; 
             width: 449px; 
-            top: 632px; 
-            left: 7px; 
+            top: 631px; 
+            left: 0px; 
             background-color: rgba(75,75,75,1); 
         }
         .silex-id-1465478880491-38 {
