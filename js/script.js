@@ -74,7 +74,7 @@
                 $(link).click(function(e){
                   var offsetTop = $(item).offset().top;
                   $('html, body').stop().animate({
-                      scrollTop: offsetTop
+                      scrollTop: offsetTop - 50
                   }, 300);
                   e.preventDefault();
                 });
@@ -83,7 +83,7 @@
             // Bind to scroll
             $(window).scroll(function(){
                // Get container scroll position
-               var fromTop = $(this).scrollTop();
+               var fromTop = $(this).scrollTop() + 50;
                // Get id of current scroll item
                var cur = scrollItems.map(function(){
                  if ($(this.item).offset().top <= fromTop)
