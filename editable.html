@@ -79,6 +79,19 @@
     }
     </style>
     <script type="text/javascript" class="silex-script">
+        $(function() {
+            var nav = $(".nav");
+            var navOffset = nav.offset().top;
+            $(window).scroll(function() {
+                if ($(this).scrollTop <= navOffset) {
+                    nav.css('position', 'static');
+                }
+                else {
+                    nav.css('position', '');
+                }
+            });
+        });
+        
         /*
          * active menu widget for Silex
          * create an element which links to an anchor, e.g. an element with a link to #anchor1
