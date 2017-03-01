@@ -73,6 +73,10 @@ $(function() {
    */
   var resizeBody = debounce(function (event){
     var bodyEl = $('body');
+    // start computation, put the body to a 0x0 size
+    // to avoid 100% elements to mess with the size computation
+    bodyEl.addClass('compute-body-size-pending');
+    // get the size of the elements in the body
     var boundingBox = getBodySize();
     var width = boundingBox.width;
     var height = boundingBox.height;
@@ -96,10 +100,21 @@ $(function() {
     }
     // set the body size to contain all the elements
     // this has to be done manually since the elements are absolutely positioned
-    bodyEl.css({
-      "min-width": width + "px",
-      "min-height": height + "px"
-    });
+    // only on desktop since in mobile the elements are in the flow
+    if(win.width() >= 480 || !bodyEl.hasClass('enable-mobile')) {
+      bodyEl.css({
+        'min-width': width + 'px',
+        'min-height': height + 'px'
+      });
+    }
+    else {
+      bodyEl.css({
+        'min-width': '',
+        'min-height': ''
+      });
+    }
+    // end computation, put back the body to a normal size
+    bodyEl.removeClass('compute-body-size-pending');
   }, 500);
 
   // only outside silex editor when the window is small enough
