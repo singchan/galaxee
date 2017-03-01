@@ -77,7 +77,7 @@
             background-size: cover; 
             background-repeat: no-repeat; 
             background-position: center center; 
-            background-attachment: scroll; 
+            background-attachment: fixed; 
         }
         .silex-id-1488365138614-6 {
             min-height: 648px; 
