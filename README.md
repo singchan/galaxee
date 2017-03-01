@@ -2,7 +2,7 @@
 
 ## Description
 
-Here is a template perfect for small organizations and businesses.This is an HTML template to edit with Silex, the open source website builder(free and open source). For you, designers and web designers to engage new customers.This template is made without programming, just drag and drop and parameters. A little CSS too, but you will not need to touch it to change the design and content.
+Here is a template perfect for small organizations and businesses.This is an HTML template to edit with [Silex, the open source website builder](http://www.silex.me) (free and open source). For you, designers and web designers to engage new customers.This template is made without programming, just drag and drop and parameters. A little CSS too, but you will not need to touch it to change the design and content.
 
 ## Features
 
