@@ -4,6 +4,10 @@
 
 Here is a template perfect for small organizations and businesses.This is an HTML template to edit with [Silex, the open source website builder](http://www.silex.me) (free and open source). For you, designers and web designers to engage new customers.This template is made without programming, just drag and drop and parameters. A little CSS too, but you will not need to touch it to change the design and content.
 
+## Licence
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
 ## Features
 
 * editable with Silex website builder free and open source, community driven, no hidden costs
